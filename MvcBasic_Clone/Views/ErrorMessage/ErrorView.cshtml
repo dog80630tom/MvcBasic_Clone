@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "ErrorView";
+    List<string> data = new List<string>();
+    data.Add(@TempData["ErrorMessage"].ToString());
+    data.Add(@TempData["UserName"].ToString());
+    data.Add(@TempData["Time"].ToString());
+}
+@foreach (var data1 in data)
+{
+    <li>@data1</li>
+
+}

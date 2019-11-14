@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "PassViewData";
+    int age =Convert.ToInt32( @ViewData["Age"]);
+    age+=1;
+}
+
+<h2>PassViewData</h2>
+
+<ul>
+    <li>名子:@ViewData["Name"]</li>
+    <li>年齡:@age</li>
+    <li>是否單身:@ViewData["Single"]</li>
+
+</ul>
+

@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "PassViewBag";
+    string name = ViewBag.Name;
+    string height = (@ViewBag.Height + 5).ToString();
+    string weight = (@ViewBag.weight + 3).ToString();
+    var married = ViewBag.married;
+}
+
+<h2>PassViewBag</h2>
+<ul>
+    <li>名子:@name</li>
+    <li>身高:@height</li>
+    <li>體重:@weight</li>
+    <li>是否結婚:@married</li>
+</ul>

@@ -1,0 +1,14 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "PetData";
+
+}
+
+<h2>PetData</h2>
+<label>寵物店的名稱:@ViewData["ShopName"]</label>
+<br />
+<label>寵物店地址:@ViewBag.Adress</label>
+@foreach (var data in Model)
+{
+<li>@data</li>
+}
